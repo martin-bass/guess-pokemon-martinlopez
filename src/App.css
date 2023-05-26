@@ -1,0 +1,157 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.pokeball {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.bg-container {
+  border: 3px solid #000;
+  width: 640px;
+  height: 360px;
+  background-image: url("./assets/fondo-pokemon.jpeg");
+  background-size: cover;
+}
+
+.img-container {
+  width: 300px;
+  position: relative;
+  top: 30px;
+  left: 40px;
+}
+
+.img-pokemon {
+  width: 300px;
+  image-rendering: pixelated;
+  filter: brightness(0);
+}
+
+.img-pokemon-visible {
+  width: 300px;
+  image-rendering: pixelated;
+}
+
+.form-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.alert-container {
+  height: 30px;
+  padding: 5px;
+}
+
+.win-container {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.win-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.score-container {
+  margin-left: 40px;
+}
+
+.errores,
+.aciertos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 5px;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer-container {
+  border-top: 3px solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #cecfd7;
+}
+
+.icons-container i {
+  padding-inline: 20px;
+}
+
+@media (max-width: 835px) {
+  .win-container {
+    flex-direction: column;
+  }
+
+  .score-container {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .pokeball {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .bg-container {
+    width: 496px;
+    height: auto;
+  }
+
+  .img-container {
+    top: 10px;
+    left: 0px;
+  }
+
+  .form-container {
+    flex-direction: column;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .bg-container {
+    width: 350px;
+    height: auto;
+  }
+
+  .img-container {
+    width: 200px;
+    position: relative;
+    top: 10px;
+    left: 0px;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+  .pokeball {
+    display: none;
+  }
+}
