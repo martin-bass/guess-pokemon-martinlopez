@@ -49,6 +49,11 @@
   gap: 20px;
 }
 
+input {
+  background-color: #fff;
+  color: #000;
+}
+
 .alert-container {
   height: 30px;
   padding: 5px;

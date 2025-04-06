@@ -23,8 +23,6 @@ function App() {
     Number(window.localStorage.getItem("ERRORES"))
   );
 
-  console.log(pokemonName);
-
   const handleSubmit = (e: React.FormEvent<Form>) => {
     e.preventDefault();
 
